@@ -3,7 +3,8 @@
 @import 'config/base';
 @import 'components/header';
 @import 'components/banner';
+@import 'components/elements';
 
 body{
-    background-color: $color-primary-muted;
+    background-color: white;
 }
