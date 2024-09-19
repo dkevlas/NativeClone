@@ -1,6 +1,8 @@
 @import 'config/variables';
+@import 'config/mixins';
 @import 'config/base';
 @import 'components/header';
+@import 'components/banner';
 
 body{
     background-color: $color-primary-muted;

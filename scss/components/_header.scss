@@ -5,25 +5,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em;
+    padding: 0 clamp(0.625rem, 0.625rem + 0.694vw, 1.25rem);
     .logo{
         color: $color-primary-contrast;
     }
     .container-general{
         display: flex;
-        gap: 1.5em;
+        gap: clamp(1rem, 1rem + 0.278vw, 1.25rem);
+        svg{
+            width: clamp(1.25rem, 1.25rem + 0.347vw, 1.563rem);
+            aspect-ratio: 1/1;
+            display: block;
+        }
         .container-nav{
+            display: none;
             ul{
                 display: flex;
-                gap: 1em;
+                gap: clamp(0.625rem, 0.625rem + 0.278vw, 0.875rem);
                 height: 100%;
                 align-items: center;
             }
         }
         .icons{
+            align-content: center;
             ul{
                 display: flex;
-                gap: 2em;
+                gap: clamp(0.625rem, 0.625rem + 0.417vw, 1rem);
                 li{
                     display: flex;
                     align-items: center;
@@ -47,21 +54,48 @@
                             color: black;
                         }
                     }
+                    &:nth-child(3){
+                        display: none;
+                    }
                 }
             }
         }
         .lenguaje{
-            display: flex;
+            display: none;
             align-items: center;
-            gap: .5em;
-            margin-left: 1em;
+            gap: clamp(0.25rem, 0.25rem + 0.278vw, 0.5rem);
             border-left: 1px solid $color-primary-muted;
-            padding: 0 0 0 .5em ;
+            padding-left: .5em ;
+        }
+        .toggle{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
         }
     }
 }
-svg{
-    width: 25px;
-    height: 25px;
-    display: block;
+
+@include mediaQuerie(medium){
+    .header-main{
+        .container-general{
+            .container-nav{
+                display: block;
+            }
+            .lenguaje{
+                display: flex;
+            }
+            .toggle{
+                display: none;
+            }
+        }
+    }
+}
+
+@include mediaQuerie(large){
+    .header-main{
+        .container-general{
+            
+        }
+    }
 }
