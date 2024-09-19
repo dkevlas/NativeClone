@@ -1,5 +1,21 @@
 //COLORES
-
 $color-primary-default: #262626;
 $color-primary-contrast: #000000;
 $color-primary-muted: #888888;
+
+//BREAKPOINTS
+$breakpoint:(
+    small: 0px,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px
+);
+
+//Z-INDEX
+$z-back: -1;
+$z-normal: 1;
+$z-element: 10;
+$z-fixed: 100;
+$z-popup: 500;
+$z-modal: 1000;
