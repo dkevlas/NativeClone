@@ -1,0 +1,5 @@
+# Archivos generados por SASS
+*.css
+
+#Directorio de imágenes
+imagenes/
