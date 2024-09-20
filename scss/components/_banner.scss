@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: -40px;
     img{
         position: absolute;
         width: 100%;
@@ -19,6 +20,9 @@
         color: white;
         h1{
             font-size: clamp(3.125rem, 3.125rem + 2.083vw, 5rem);
+            span{
+                font-style: italic;
+            }
         }
         p{
             margin: .5em 0 2.5em 0;

@@ -1,21 +1,15 @@
 .section-elements{
-    position: relative;
     width: 100%;
-    height: max-content;
     .container-elements{
-        position: absolute;
-        top: clamp(-1.875rem, -1.875rem + -1.389vw, -3.125rem);
         width: 100%;
         .elements-grid{
             display: grid;
             justify-items: center;
-            top: 0;
-            gap: clamp(1.875rem, 1.875rem + -1.389vw, 3.125rem);
+            gap: clamp(1rem, 1rem + 1.944vw, 2.75rem);
             padding: 0 clamp(1.875rem, 1.875rem + -1.389vw, 3.125rem);
             .element{
                 width: 100%;
                 aspect-ratio: 3/2;
-                background-color: blue;
                 position: relative;
                 box-shadow: 0 25px 15px #0005;
                 img{
@@ -27,7 +21,7 @@
                 .content{
                     position: absolute;
                     top: 50%;
-                    left: 20px;
+                    left: 3%;
                     transform: translateY(-50%);
                     color: white;
                     p{
@@ -49,13 +43,25 @@
     }
 }
 @include mediaQuerie(medium){
-    .container-elements{
-        .elements-grid{
-            grid-template-columns: repeat(3, 1fr);
-            .element{
-                width: 80%;
-                aspect-ratio: 3/2;
-                background-color: blue;
+    .section-elements{
+        .container-elements{
+            .elements-grid{
+                grid-template-columns: repeat(3, 1fr);
+                .element{
+                    aspect-ratio: 3/2;
+                }
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .section-elements{
+        .container-elements{
+            .elements-grid{
+                .element{
+                    width: 80%;
+                    aspect-ratio: 3/2;
+                }
             }
         }
     }
