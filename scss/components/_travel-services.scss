@@ -1,0 +1,46 @@
+.travel-services{
+    margin-top: 4em;
+    .container-services{
+        display: grid;
+        gap: 20px;
+        .service{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            h4{
+                font-size: clamp(1.25rem, 1.25rem + 0.278vw, 1.5rem);
+            }
+            p{
+                font-size: clamp(0.875rem, 0.875rem + 0.278vw, 1.125rem);
+            }
+        }
+    }
+    svg{
+        width: clamp(1.563rem, 1.563rem + 0.694vw, 2.188rem);
+        aspect-ratio: 1/1;
+        fill: red;
+    }
+}
+@include mediaQuerie(medium){
+    .travel-services{
+        .container-services{
+            .service{
+                width: 60%;
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .travel-services{
+        .container-services{
+            grid-template-columns: repeat(4, 1fr);
+            .service{
+                width: 80%;
+            }
+        }
+    }
+}
