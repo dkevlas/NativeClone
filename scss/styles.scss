@@ -6,7 +6,9 @@
 @import 'components/elements';
 @import 'components/travel-destination';
 @import 'components/travel-services';
+@import 'components/weekend-tours';
 
 body{
     background-color: white;
 }
+@include layout;
