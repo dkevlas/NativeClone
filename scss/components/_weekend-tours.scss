@@ -1,0 +1,60 @@
+.weekend-tours{
+    min-width: 300px;
+    margin-top: 4em;
+    width: 100%;
+    background-image: url(/imagenes/europ-bg-3.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -100px;
+    .container-tour{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        padding: 5%;
+        button{
+            width: max-content;
+            background-color: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        h2{
+            width: 80%;
+            text-wrap: pretty;
+            font-size: clamp(1.875rem, 1.875rem + 2.083vw, 3.75rem);
+        }
+        p{
+            width: 90%;
+            font-size: clamp(1rem, 1rem + 0.278vw, 1.25rem);
+        }
+        div{
+            width: max-content;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 1.5em;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+@include mediaQuerie(medium){
+    .weekend-tours{
+        height: 700px;
+        .container-tour{
+            width: 70%;
+            padding: 5% 10%;
+        }
+    }
+}
+@include mediaQuerie(large){
+    .weekend-tours{
+        height: 800px;
+        .container-tour{
+            padding: 5% 15%;
+        }
+    }
+}
