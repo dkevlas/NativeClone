@@ -1,0 +1,59 @@
+.tour-data{
+    margin-top: 4em;
+    .container-data{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 100%;
+        .data{
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            align-items: center;
+            padding: .5em 0;
+            .number{
+                font-size: clamp(1.563rem, 1.563rem + 1.042vw, 2.5rem);
+                font-weight: bold;
+                color: red;
+            }
+            .text{
+                h4{
+                    font-size: clamp(0.875rem, 0.875rem + 0.583vw, 1.4rem);
+                }
+                p{
+                    font-size: clamp(0.7rem, 0.7rem + 0.333vw, 1rem);
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+@include mediaQuerie(medium){
+    .tour-data{
+        .container-data{
+            flex-direction: row;
+            gap: .5em;
+            .data{
+                flex: 1;
+                flex-direction: column;
+                justify-content: start;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@include mediaQuerie(xlarge){
+    .tour-data{
+        .container-data{
+            gap: 1.5em;
+            .data{
+                flex: 1;
+                flex-direction: row;
+                justify-content: start;
+                text-align: center;
+            }
+        }
+    }
+}
