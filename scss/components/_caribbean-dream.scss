@@ -4,6 +4,7 @@
     background-image: url(/imagenes/bg-bed.jpg);
     background-size: cover;
     background-position: center;
+    margin-bottom: -100px;
     .container{
         display: flex;
         flex-direction: column;
@@ -54,6 +55,7 @@
 }
 @include mediaQuerie(large){
     .caribbean-dream{
+        height: 850px;
         .container{
             width: 40%;
         }
