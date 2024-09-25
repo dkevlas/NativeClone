@@ -1,0 +1,61 @@
+.caribbean-dream{
+    width: 100%;
+    height: 800px;
+    background-image: url(/imagenes/bg-bed.jpg);
+    background-size: cover;
+    background-position: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        padding-top: 5em;
+        text-wrap: pretty;
+        .price{
+            width: max-content;
+            padding: .7em 1.2em;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: clamp(0.875rem, 0.875rem + 0.278vw, 1.125rem);
+            font-weight: bold;
+        }
+        h2{
+            font-size: clamp(2.188rem, 2.188rem + 1.042vw, 3.125rem);
+        }
+        p{
+            color: gray;
+            font-size: clamp(0.875rem, 0.875rem + 0.278vw, 1.125rem);
+            width: 80%;
+        }
+        .show{
+            width: max-content;
+            padding: 1.3em 2em;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+    }
+}
+
+@include mediaQuerie(medium){
+    .caribbean-dream{
+        margin-top: -2em;
+        height: 700px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .container{
+            padding-top: 2em;
+            width: 50%;
+        }
+    }
+}
+@include mediaQuerie(large){
+    .caribbean-dream{
+        .container{
+            width: 40%;
+        }
+    }
+}
