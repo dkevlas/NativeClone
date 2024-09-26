@@ -1,0 +1,71 @@
+.world-tour{
+    margin-top: 2em;
+    .container-world{
+        background-color: #dedede;
+        display: grid;
+        padding: 3em 1em;
+        gap: 2em;
+        justify-items: center;
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5em;
+            h2{
+                font-size: clamp(1.5rem, 1.5rem + 0.764vw, 2.188rem);
+                span{
+                    font-style: italic;
+                }
+            }
+            p{
+                font-size: clamp(0.75rem, 0.75rem + 0.278vw, 1rem);
+                line-height: 1.5rem;
+            }
+            b{
+                font-size: clamp(0.75rem, 0.75rem + 0.278vw, 1rem);
+            }
+            .bottom{
+                font-size: clamp(0.75rem, 0.75rem + 0.278vw, 1rem);
+                font-style: italic;
+                b{
+                font-style: normal;
+                }
+            }
+        }
+        .photos{
+            position: relative;
+            width: 90%;
+            aspect-ratio: 1/1;
+            img{
+                position: absolute;
+                width: 75%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+                object-position: center;
+                box-shadow: 0 0 10px gray;
+            }
+            .img3{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .img2{
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+            .img1{
+                right: 0;
+            }
+        }
+    }
+}
+
+@include mediaQuerie(large){
+    .world-tour{
+        .container-world{
+            .content{
+                justify-content: center;
+            }
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
