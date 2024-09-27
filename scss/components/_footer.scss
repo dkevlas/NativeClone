@@ -1,0 +1,54 @@
+.footer{
+    height: 5em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    font-size: clamp(0.8rem, 0.8rem + 0.333vw, 1.1rem);
+    color: gray;
+    .company{
+        h4{
+            span{
+                color: white;
+            }
+        }
+    }
+    .offers{
+        display: flex;
+        gap: .5em;
+        svg{
+            fill: white;
+            width: 15px;
+        }
+        .content{
+            span, b, a{
+                color: white;
+            }
+            a{
+                cursor: pointer;
+                font-weight: bold;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            b{
+                font-size: clamp(1rem, 1rem + 0.333vw, 1.3rem);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        }
+    }
+}
+@include mediaQuerie(medium){
+    .footer{
+        height: 6em;
+        gap: 1em;
+        flex-direction: row;
+    }
+}
+@include mediaQuerie(large){
+    .footer{
+        height: 7em;
+    }
+}
