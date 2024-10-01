@@ -4,7 +4,7 @@
         display: grid;
         justify-items: center;
         box-shadow: 0 0 10px gray;
-        width: 80%;
+        width: 100%;
         margin: auto;
     }
     .item:nth-child(1){
@@ -54,6 +54,13 @@
     .couples-experiences{
         .items{
             grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+@include mediaQuerie(large){
+    .couples-experiences{
+        .items{
+            width: 80%;
         }
     }
 }
