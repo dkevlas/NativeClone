@@ -9,7 +9,7 @@ Este proyecto es una **imitación y/o mejora** de un diseño web que encontré e
 ### Imitaciones por Tipo de Pantalla
 
 1. **Mobile-Large**  
-   - **[iPhone XR/XS Max](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-02-Native/Tablet-Large.png)**
+   - **[iPhone XR/XS Max](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-02-Native/Mobile-Large.png)**
    - Resolución: 414x1941
 
 2. **Mobile-Medium**  
@@ -17,7 +17,7 @@ Este proyecto es una **imitación y/o mejora** de un diseño web que encontré e
    - Resolución: 349x2186
 
 3. **Tablet-Large**  
-   - **[iPad Pro (12.9-inch)](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-02-Native/Mobile-Large.png)**
+   - **[iPad Pro (12.9-inch)](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-02-Native/Tablet-Large.png)**
    - Resolución: 1026x1475
 
 4. **Laptop-Standard**  
