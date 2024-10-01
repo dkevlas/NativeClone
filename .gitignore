@@ -10,3 +10,6 @@ package-lock.json
 
 # Archivos JS generados
 dist/
+
+#Typescript
+typescript/

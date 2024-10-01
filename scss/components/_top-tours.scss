@@ -39,7 +39,10 @@
                         font-size: clamp(0.8rem, 0.8rem + 0.111vw, 0.9rem);
                     }
                     .star{
-                        font-size: clamp(0.8rem, 0.8rem + 0.111vw, 0.9rem);
+                        svg{
+                            width: clamp(5rem, 4.107rem + 2.381vw, 6.25rem);
+                            fill: yellow;
+                        }
                     }
                 }
             }

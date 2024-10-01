@@ -1,8 +1,12 @@
 .couples-experiences{
     width: 100%;
-    display: grid;
-    justify-items: center;
-    gap: 10px;
+    .items{
+        display: grid;
+        justify-items: center;
+        box-shadow: 0 0 10px gray;
+        width: 80%;
+        margin: auto;
+    }
     .item:nth-child(1){
         background-color: #fdfdfd;
     }
@@ -14,7 +18,7 @@
         color: white;
     }
     .item{
-        width: 80%;
+        width: 100%;
         padding: 40px 20px;
         .content{
             width: 100%;
@@ -48,16 +52,8 @@
 }
 @include mediaQuerie(medium){
     .couples-experiences{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 0;
-        .item{
-            width: 100%;
-            //aspect-ratio: 3/2;
+        .items{
+            grid-template-columns: repeat(3, 1fr);
         }
-    }
-}
-@include mediaQuerie(large){
-    .couples-experiences{
-        grid-template-columns: repeat(3, 1fr);
     }
 }
